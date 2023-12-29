@@ -1,9 +1,8 @@
-import Head from 'next/head'
-import Link from 'next/link' // Import Link from next/link
-import { Inter } from 'next/font/google'
+import Head from 'next/head';
+import Link from 'next/link'; // Import Link from next/link
+import { Inter } from 'next/font/google';
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -23,9 +22,11 @@ export default function Home() {
           <Link href="/Sleep"> {/* Link to Sleep.js */}
             <a style={{ fontSize: '80px', cursor: 'pointer' }}>😴</a>
           </Link>
-          <div style={{ fontSize: '80px' }}>🔥</div>
+          <Link href="/Water"> {/* Link to Water.js */}
+            <a style={{ fontSize: '80px', cursor: 'pointer' }}>🚰</a>
+          </Link>
         </div>
       </main>
     </>
-  )
+  );
 }

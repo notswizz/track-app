@@ -3,14 +3,12 @@ import Link from 'next/link';
 
 const NavBar = () => {
   return (
-    <nav>
-      <ul style={{ listStyleType: 'none', margin: 0, padding: 0 }}>
-        <li style={{ display: 'inline', marginRight: '20px' }}>
-        <Link href="/" passHref>
-  <span style={{ cursor: 'pointer' }}>Home</span>
-</Link>
-
-
+    <nav className="bg-gray-800 p-4">
+      <ul className="flex justify-center">
+        <li className="mr-6">
+          <Link href="/" passHref>
+            <span className="text-white hover:text-gray-300 cursor-pointer">Home</span>
+          </Link>
         </li>
         {/* Add other navigation links here if needed */}
       </ul>
