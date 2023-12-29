@@ -18,11 +18,19 @@ const SleepInput = () => {
   };
 
   return (
-    <div>
-      <button onClick={toggleSleepAwake}>
-        {isSleep ? 'Switch to Awake' : 'Switch to Sleep'}
+    <div className="max-w-md mx-auto text-center py-10">
+      <button 
+        onClick={toggleSleepAwake}
+        className={`text-lg font-semibold py-2 px-4 rounded-lg shadow-md mr-4 ${
+          isSleep ? 'bg-blue-500 hover:bg-blue-700 text-white' : 'bg-yellow-500 hover:bg-yellow-700 text-white'
+        }`}
+      >
+        {isSleep ? 'Sleep' : 'Awake'}
       </button>
-      <button onClick={handleSubmit}>
+      <button 
+        onClick={handleSubmit}
+        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow-md"
+      >
         Submit
       </button>
     </div>
